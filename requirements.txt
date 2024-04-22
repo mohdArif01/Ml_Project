@@ -2,5 +2,8 @@ numpy
 pandas
 pymongo
 python-dotenv
-skikit-learn
+scikit-learn
+seaborn
+catboost
+xgboost
 # -e .

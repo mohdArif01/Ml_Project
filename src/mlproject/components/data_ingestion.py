@@ -22,7 +22,7 @@ class DataIngestion:
             
             # Step1: Reading code from mongodb
             logging.info("Reading completed from mongodb")
-            df=read_mongodb_data() # DataFrame Recieved
+            df=pd.read_csv(os.path.join('Notebook/data', 'raw.csv')) # DataFrame Recieved
             #step2: Saving the data in raw data path
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)
 
